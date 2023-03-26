@@ -25,14 +25,22 @@ namespace PBL3_Demo4
         }
         private void openNewForm()
         {
-            Application.Run(new FormQuanLy());
+            if (txt_username.Text.Trim() == "quanly")
+            {
+                FormQuanLy frm = new FormQuanLy();
+                frm.ShowDialog();
+            }
+            else if (txt_username.Text.Trim() == "nhanvien")
+            {
+                FormNhanVien frm = new FormNhanVien();
+                frm.ShowDialog();
+            }
+            else return;
         }
 
         private void btn_login_Click(object sender, EventArgs e)
         {
-            th = new Thread(openNewForm);
-            th.SetApartmentState(ApartmentState.STA);
-            th.Start();
+            openNewForm();
             this.Close();
         }
     }

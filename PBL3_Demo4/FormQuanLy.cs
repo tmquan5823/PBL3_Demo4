@@ -33,14 +33,18 @@ namespace PBL3_Demo4
         }
         private void setVisibleFalse()
         {
-            ucThietLapTaiKhoan1.Visible = false;
-            ucQuanLyNhanVien1.Visible = false;
+            //ucThietLapTaiKhoan1.Visible = false;
+            //ucQuanLyNhanVien1.Visible = false;
         }
         private void btn_ThietLapTK_Click(object sender, EventArgs e)
         {
             setVisibleFalse();
+            panel_main.Controls.Clear();
             lbl_form.Text = "Thiết lập tài khoản";
-            ucThietLapTaiKhoan1.Visible = true;
+            UCThietLapTaiKhoan uc = new UCThietLapTaiKhoan();
+            panel_main.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
+            //ucThietLapTaiKhoan1.Visible = true;
         }
 
         private void btn_DangXuat_Click(object sender, EventArgs e)
@@ -54,8 +58,12 @@ namespace PBL3_Demo4
         private void btn_QuanLyNV_Click(object sender, EventArgs e)
         {
             setVisibleFalse();
+            panel_main.Controls.Clear();
             lbl_form.Text = "Quản lý nhân viên";
-            ucQuanLyNhanVien1.Visible = true;
+            UCQuanLyNhanVien uc = new UCQuanLyNhanVien();
+            panel_main.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
+            //ucQuanLyNhanVien1.Visible = true;
         }
     }
 }

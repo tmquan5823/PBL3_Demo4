@@ -63,6 +63,16 @@ namespace PBL3_Demo4.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _62237a0e77af85429217d5d5d0bb429f {
+            get {
+                object obj = ResourceManager.GetObject("62237a0e77af85429217d5d5d0bb429f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap download {
             get {
                 object obj = ResourceManager.GetObject("download", resourceCulture);

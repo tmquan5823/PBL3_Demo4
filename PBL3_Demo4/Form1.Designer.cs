@@ -33,8 +33,8 @@
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_username = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -49,8 +49,8 @@
             this.panel1.Controls.Add(this.iconPictureBox2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.iconPictureBox1);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txt_username);
+            this.panel1.Controls.Add(this.txt_password);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label3);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -115,25 +115,25 @@
             this.iconPictureBox1.TabIndex = 13;
             this.iconPictureBox1.TabStop = false;
             // 
-            // textBox1
+            // txt_username
             // 
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(107, 145);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(506, 38);
-            this.textBox1.TabIndex = 11;
+            this.txt_username.BackColor = System.Drawing.Color.White;
+            this.txt_username.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_username.Location = new System.Drawing.Point(107, 145);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(506, 38);
+            this.txt_username.TabIndex = 11;
             // 
-            // textBox2
+            // txt_password
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(107, 230);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(506, 38);
-            this.textBox2.TabIndex = 12;
+            this.txt_password.BackColor = System.Drawing.Color.White;
+            this.txt_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txt_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_password.Location = new System.Drawing.Point(107, 230);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(506, 38);
+            this.txt_password.TabIndex = 12;
             // 
             // label2
             // 
@@ -182,8 +182,8 @@
         private System.Windows.Forms.Button btn_login;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_username;
+        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
     }
